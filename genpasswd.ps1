@@ -1,4 +1,5 @@
-﻿<# 
+﻿<# ref: https://github.com/wormHole3001/passwordGen/blob/master/passwordGen.ps1 #>
+<# 
 .SYNOPSIS 
 Password Generator
  
