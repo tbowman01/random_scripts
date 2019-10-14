@@ -8,6 +8,8 @@ repos=( https://github.com/OWASP/Amass.git
 	https://github.com/jondonas/linux-exploit-suggester-2
 	https://github.com/tbowman01/misc-scripts.git
 	https://github.com/abatchy17/SetupScripts.git
+	https://github.com/ucki/URP.git
+	https://github.com/mad-robot/Spartan.git
 	)
 
 for each in ${repos[@]};
