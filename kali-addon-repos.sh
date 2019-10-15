@@ -1,4 +1,17 @@
 #!/bin/bash
+
+cd ~/Downloads
+echo "downloading a few extra scripts that might be helpful"
+mkdir extras && cd extras
+curl --progress-bar -o Shells-Linux https://book.hacktricks.xyz/shells/shells#shells-linux
+curl --progress-bar -o Shells-Windows https://book.hacktricks.xyz/shells/shells#shells-windows
+curl --progress-bar -o oh-shit-guide.html https://anhtai.me/oscp-fun-guide/
+curl --progress-bar -o windows_recon_script https://gist.githubusercontent.com/sckalath/8dacd032b65404ef7411/raw/9149b02372d8ca903f03f2fe3bce3a2830981033/windows_privesc
+curl --progress-bar -o linpeas.sh https://raw.githubusercontent.com/carlospolop/linux-privilege-escalation-awsome-script/master/linpeas.sh
+# download knockknock and extract
+curl --progress-bar -o knockknock-0.1.3.tar.gz https://files.pythonhosted.org/packages/29/37/d3d3abb10f3a87cbd84bcc191dd6b5c391b476acb529b25b1106e9f7bc12/knockknock-0.1.3.tar.gz
+tar -xf knockknock-0.1.3.tar.gz
+
 cd ~/Downloads
 repos=( https://github.com/OWASP/Amass.git
    	https://github.com/danielmiessler/SecLists.git
@@ -14,14 +27,6 @@ repos=( https://github.com/OWASP/Amass.git
 
 for each in ${repos[@]};
 do
-	echo 'Downloading : '$each
+	#echo 'Downloading : '$each
 	git clone $each
 done
-cd ~/Downloads
-echo "downloading a few extra scripts that might be helpful"
-mkdir extra_scripts && cd extra_scripts
-curl -o Shells-Linux https://book.hacktricks.xyz/shells/shells#shells-linux
-curl -o Shells-Windows https://book.hacktricks.xyz/shells/shells#shells-windows
-curl -o oh-shit-guide https://anhtai.me/oscp-fun-guide/
-curl -o windows_recon_script https://gist.githubusercontent.com/sckalath/8dacd032b65404ef7411/raw/9149b02372d8ca903f03f2fe3bce3a2830981033/windows_privesc
-curl -o linpeas.sh https://raw.githubusercontent.com/carlospolop/linux-privilege-escalation-awsome-script/master/linpeas.sh
