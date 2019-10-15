@@ -24,6 +24,7 @@ repos=( https://github.com/OWASP/Amass.git
 	https://github.com/abatchy17/SetupScripts.git
 	https://github.com/ucki/URP.git
 	https://github.com/mad-robot/Spartan.git
+	https://github.com/trustedsec/unicorn.git
 	)
 
 for each in ${repos[@]};
