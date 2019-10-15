@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# shortlink: shorturl.at/pBOP7
 cd ~/Downloads
 echo "downloading a few extra scripts that might be helpful"
 mkdir extras && cd extras
