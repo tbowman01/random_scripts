@@ -1,5 +1,6 @@
 #!/bin/bash
-# shortlink: shorturl.at/pBOP7
+# shortlink to github: shorturl.at/pBOP7
+# shortlink to raw file: shorturl.at/DL069
 cd ~/Downloads
 echo "downloading a few extra scripts that might be helpful"
 mkdir extras && cd extras
