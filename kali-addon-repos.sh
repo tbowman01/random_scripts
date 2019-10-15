@@ -12,6 +12,7 @@ curl --progress-bar -o linpeas.sh https://raw.githubusercontent.com/carlospolop/
 # download knockknock and extract
 curl --progress-bar -o knockknock-0.1.3.tar.gz https://files.pythonhosted.org/packages/29/37/d3d3abb10f3a87cbd84bcc191dd6b5c391b476acb529b25b1106e9f7bc12/knockknock-0.1.3.tar.gz
 tar -xf knockknock-0.1.3.tar.gz
+curl --progress-bar -o offsec-cheetsheets.html https://ired.team/offensive-security-experiments/offensive-security-cheetsheets
 
 cd ~/Downloads
 repos=( https://github.com/OWASP/Amass.git
@@ -28,6 +29,7 @@ repos=( https://github.com/OWASP/Amass.git
 	https://github.com/vulnersCom/nmap-vulners.git
 	https://github.com/21y4d/nmapAutomator.git
 	https://github.com/diego-treitos/linux-smart-enumeration.git
+	https://github.com/vulnersCom/nmap-vulners.git
 	)
 
 for each in ${repos[@]};
