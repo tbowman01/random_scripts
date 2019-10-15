@@ -15,9 +15,7 @@ tar -xf knockknock-0.1.3.tar.gz
 curl --progress-bar -o offsec-cheetsheets.html https://ired.team/offensive-security-experiments/offensive-security-cheetsheets
 
 cd ~/Downloads
-repos=( https://github.com/OWASP/Amass.git
-   	https://github.com/danielmiessler/SecLists.git
-	https://github.com/knockout/knockout.git
+repos=( https://github.com/knockout/knockout.git
 	https://github.com/SecWiki/windows-kernel-exploits
 	https://github.com/SecWiki/linux-kernel-exploits.git
 	https://github.com/jondonas/linux-exploit-suggester-2
@@ -29,11 +27,12 @@ repos=( https://github.com/OWASP/Amass.git
 	https://github.com/vulnersCom/nmap-vulners.git
 	https://github.com/21y4d/nmapAutomator.git
 	https://github.com/diego-treitos/linux-smart-enumeration.git
-	https://github.com/vulnersCom/nmap-vulners.git
+	https://github.com/OWASP/Amass.git
+   	https://github.com/danielmiessler/SecLists.git
 	)
 
 for each in ${repos[@]};
 do
-	#echo 'Downloading : '$each
+	echo 'Downloading : '$each
 	git clone $each
 done
