@@ -29,6 +29,7 @@ repos=( https://github.com/knockout/knockout.git
 	https://github.com/diego-treitos/linux-smart-enumeration.git
 	https://github.com/OWASP/Amass.git
    	https://github.com/danielmiessler/SecLists.git
+	https://github.com/pwndbg/pwndbg
 	)
 
 for each in ${repos[@]};
